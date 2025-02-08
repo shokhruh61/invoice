@@ -1,13 +1,16 @@
-import React from 'react'
-import { Routes, Route } from 'react-router-dom'
-function App () {
+import { InvoiceProvider } from "./context/InvoiceContext";
+import InvoiceList from "./components/Invoice/InvoiceList";
+import Navbar from "./components/Navbar";
+
+function App() {
   return (
-    <div>
-      <Routes>
-        <Route></Route>
-      </Routes>
-    </div>
-  )
+    <InvoiceProvider>
+      <Navbar />
+      <main className="container mx-auto p-4">
+        <InvoiceList />
+      </main>
+    </InvoiceProvider>
+  );
 }
 
-export default App
+export default App;
