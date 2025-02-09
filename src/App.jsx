@@ -1,9 +1,15 @@
-import React from 'react'
+import React from 'react';
+import MainLayouts from './layouts/MainLayouts';
+import { DarkModeProvider } from './context/DarkLightMode.jsx';
 
 function App() {
   return (
-    <div>App</div>
-  )
+    <DarkModeProvider>
+      <MainLayouts>
+
+      </MainLayouts>
+    </DarkModeProvider>
+  );
 }
 
-export default App
+export default App;
