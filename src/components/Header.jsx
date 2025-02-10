@@ -45,11 +45,6 @@ function Header () {
           </div>
         </div>
       </header>
-      <div>
-        <h1 className={`pl-32 pt-20 ${darkMode ? 'text-white' : ''}`}>
-          hello world{' '}
-        </h1>
-      </div>
     </div>
   )
 }
