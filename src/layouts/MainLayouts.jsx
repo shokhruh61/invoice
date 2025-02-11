@@ -1,13 +1,14 @@
-import React from 'react'
-import Header from '../components/Header'
+import React from 'react';
+import Navbar from '../components/Navbar';
 
 function MainLayouts({ children }) {
     return (
-        <div>
-            <Header />
+        <div >
+            <Navbar />
             {children}
+
         </div>
-    )
+    );
 }
 
-export default MainLayouts
+export default MainLayouts;
