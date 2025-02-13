@@ -4,7 +4,7 @@ import Header from './components/Header'
 import { AnimatePresence } from 'framer-motion';
 import { Routes, Route, useLocation} from 'react-router-dom';
 import InvoiceInfo from './components/InvoiceInfo';
-import invoiceSlice from './redux/invoiceSlice';
+import invoiceSlice from './store/invoiceSlice';
 import { useDispatch } from 'react-redux';
 
 function App() {
